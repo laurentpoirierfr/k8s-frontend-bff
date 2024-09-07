@@ -1,7 +1,7 @@
 # k8s-frontend-bff
 
 
-```mermaids
+```mermaid
 graph LR
     A[Frontend] --> B[Bff]
     B --> C[Service 01]
