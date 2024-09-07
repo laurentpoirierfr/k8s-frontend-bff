@@ -1,0 +1,13 @@
+# Récupère le nom du module Go depuis le fichier go.mod
+MODULE_NAME := "frontend"
+
+# Tag Docker
+TAG := latest
+
+# Cible pour construire l'image Docker
+docker-build:
+	docker build -t $(MODULE_NAME):$(TAG) .
+
+# Pour vérifier le nom du module extrait
+print-module:
+	@echo "Nom du module Go: $(MODULE_NAME)"	

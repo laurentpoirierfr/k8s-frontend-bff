@@ -1,0 +1,20 @@
+server {
+    listen       ${NGINX_PORT};
+    server_name  ${SERVER_NAME};
+
+    location / {
+      proxy_set_header Host             $host;
+      proxy_set_header X-Real-IP        $remote_addr;
+
+      root   /usr/share/nginx/html;
+      index  index.html;
+      try_files $uri $uri/index.html =404;
+    }
+
+    # Example of reverse proxy, separate front end and back end
+    location /api/ {
+        resolver 127.0.0.11 valid=30s; # Docker DNS
+        proxy_pass ${URL_BFF}/api/; # Remote back end
+        proxy_redirect default;
+    }
+}
