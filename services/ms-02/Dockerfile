@@ -1,8 +1,5 @@
 FROM golang:1.23
 
-ENV GOPROXY="http://nexus-fabfonc.maif.local/repository/go-public,direct"
-ENV GOSUMDB="off"
-
 RUN mkdir /src/
 WORKDIR /src/
 COPY . .

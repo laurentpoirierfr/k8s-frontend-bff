@@ -1,5 +1,5 @@
 # Récupère le nom du module Go depuis le fichier go.mod
-MODULE_NAME := "frontend"
+MODULE_NAME := "bluehousemax/frontend"
 
 # Tag Docker
 TAG := latest
@@ -11,3 +11,7 @@ docker-build:
 # Pour vérifier le nom du module extrait
 print-module:
 	@echo "Nom du module Go: $(MODULE_NAME)"	
+
+# Docker push
+docker-push:
+	docker push $(MODULE_NAME):$(TAG)

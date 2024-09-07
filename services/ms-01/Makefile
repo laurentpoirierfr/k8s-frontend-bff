@@ -10,4 +10,8 @@ docker-build:
 
 # Pour vérifier le nom du module extrait
 print-module:
-	@echo "Nom du module Go: $(MODULE_NAME)"	
+	@echo "Nom du module Go: $(MODULE_NAME)"
+
+# Docker push
+docker-push:
+	docker push $(MODULE_NAME):$(TAG)

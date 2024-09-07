@@ -1,4 +1,4 @@
-module github.com/bff
+module bluehousemax/bff
 
 go 1.23.1
 

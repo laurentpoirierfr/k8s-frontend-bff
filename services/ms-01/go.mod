@@ -1,4 +1,4 @@
-module github.com/ms-01
+module bluehousemax/ms-01
 
 go 1.23.1
 
