@@ -4,15 +4,25 @@
 <head>
     <meta charset="utf-8">
     <title>Docker Nginx</title>
+    <link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css">
 </head>
 
 <body>
-    <h2>Hello from Nginx container</h2>
+    <div class="o-container o-container--medium">
+        <h2>Hello from Nginx container</h2>
 
-    <ul>
-        <li><a href="/api/service-01" target="_blank">/api/service-01</a></li>
-        <li><a href="/api/service-02" target="_blank">/api/service-02</a></li>
-    </ul>
+        <ul>
+            <li><a href="/api/service-01" target="service">/api/service-01</a></li>
+            <li><a href="/api/service-02" target="service">/api/service-02</a></li>
+        </ul>
+
+        <iframe src="" height="400" width="800" name="service">
+            <p>Votre navigateur ne supporte aucune iframe !</p>
+        </iframe>
+    </div>
+
+    <script type="module" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.js"></script>
 </body>
 
 </html>

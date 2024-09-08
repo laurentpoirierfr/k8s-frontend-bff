@@ -11,5 +11,6 @@ FROM ubuntu:latest
 COPY --from=0 /src/main /main
 COPY --from=0 /src/configs /configs
 
+EXPOSE 8080
 
 CMD ["/main"]

@@ -1,5 +1,6 @@
 # k8s-frontend-bff
 
+### Schema
 
 ```mermaid
 graph LR
@@ -8,8 +9,17 @@ graph LR
     B --> D[Service 02]
 ```
 
+## Not secure architecture 
 
-## k8s Installation 
+```bash
+open http://localhost:8080
+docker compose up
+```
+
+
+
+## k8s Installation
+
 
 
 ```bash
