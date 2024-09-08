@@ -1,6 +1,6 @@
 # k8s-frontend-bff
 
-### Schema
+### Schema
 
 ```mermaid
 graph LR
